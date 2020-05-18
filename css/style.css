@@ -55,7 +55,7 @@ a {
 
 .header {
 	background-color: #f4f7f9;
-	background-image: url("../img/services-background.jpg");
+	background-image: url("../img/services-background.png");
 	background-repeat: repeat;
 	background-position: 0 0;
 }
@@ -230,7 +230,7 @@ a {
 }
 
 .promo-inner p {
-	padding-bottom: 20px;
+	padding-bottom: 14px;
 }
 
 .promo-block p {
@@ -242,6 +242,7 @@ a {
 
 /* проверить ширину кнопки*/
 .button-promo {
+	display: block;
 	line-height: 18px;
 	width: 135px;
 	padding top: 10px;
