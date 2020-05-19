@@ -98,6 +98,7 @@ a {
 }
 
 .header .button-order {
+	width: 150px;
 	background-color: #63a63e;
 }
 
@@ -224,13 +225,14 @@ a {
 }
 
 .promo-inner {
-	padding-left: 23px;
+	padding-left: 22px;
 	padding-top: 21px;
-	padding-bottom: 28px;
+	padding-bottom: 21px;
 }
 
+/* проверить внутренний отступ*/
 .promo-inner p {
-	padding-bottom: 14px;
+	padding-bottom: 13px;
 }
 
 .promo-block p {
@@ -551,8 +553,8 @@ a {
 }
 
 .service-title {
-	font-size: 36px;
-	line-height: 24px;
+	font-size: 30px;
+	line-height: 30px;
 	color: #32425c;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -588,6 +590,10 @@ a {
 	line-height: 24px;
 	color: #f1f5f7;
 	background-color: #32425c;
+}
+
+.footer-address {
+	color: #f3f7f9;
 }
 
 .footer a:hover {
@@ -673,6 +679,11 @@ a {
 	padding: 37px 80px;
 }
 
+.item-added {
+	width: 620px;
+	min-height: 282px: 
+}
+
 .item-added .button-area {
 	background-color: #f1f1f1;
 }
@@ -689,6 +700,16 @@ a {
 
 .button-resume:active {
 	color: #ffffff;
+}
+
+/*проверить - не работает внутренняя красная тень, на макете сделана просто картинкой*/
+.map-big {
+	box-shadow: inset 0 7px 0 0 #ff5257;
+}
+
+.on-the-map {
+	width: 943px;
+	min-height: 449px;
 }
 
 /*--CATALOG--*/
@@ -732,11 +753,10 @@ a {
 
 .column-title {
 	font-size: 13px;
-	line-height: 18px;
-	padding: 8px 15px;
+	padding: 10px 18px;
 	text-transform: uppercase;
 	background-color: #f7f3ec;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 .filter-form {
@@ -763,16 +783,19 @@ a {
 	line-height: 18px;
 	text-align: center;
 	background-color: #f7f3ec;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 .filter-block .dash {
+	font-size: 16px;
+	line-height: 18px;
+	color: #444444;
 	background-color: transparent;
 }
 
 .filter-producer-list label {
 	font-size: 15px;
-	line-height: 20px;
+	line-height: 19px;
 }
 
 .filter-block input:disabled + label {
@@ -784,16 +807,19 @@ a {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
+	padding: 10px 15px;
+	
 	background-color: transparent;
 	border: 1px solid #e5e5e5;
-	border-radius: 3px;
-	padding: 10px 15px;
-	padding-top: 9px;
-	padding-right: 14px;
+	border-radius: 2px;
+}
+
+.filter-show {
+	border-radius: 0px;
 }
 
 .button-action:hover {
-	border: 1px solid #bdc6ca;
+	border: 1px solid #c5c5c5;
 }
 
 .button-action:active {
