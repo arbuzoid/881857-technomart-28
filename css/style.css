@@ -92,6 +92,11 @@ a {
 	line-height: 24px;
 }
 
+.user-nav .btn {
+	width: 150px;
+	height: 22px;
+}
+
 .header .btn {
 	text-transform: none;
 	background-color: #293449;
@@ -144,15 +149,13 @@ a {
 }
 
 .header-contacts a {
-	box-sizing: border-box;
 	font-size: 21px;
 	line-height: 30px;
 	color: #ee3643;
 	font-weight: 700;
-	padding-top: 7px;
-	padding-right: 45px;
-	padding-bottom: 8px;
-	padding-left: 74px;
+	width: 270px;
+	padding-top: 4px;
+	padding-bottom: 6px;
 	border: 3px solid #ffffff;
 }
 
@@ -166,7 +169,8 @@ a {
 	line-height: 21px;
 	color: #000000;
 	background-color: #ffffff;
-	padding: 12px 24px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .button-login:hover {
@@ -198,8 +202,6 @@ a {
 .header-nav a {
 	font-size: 18px;
 	line-height: 24px;
-	padding-top: 16px; 
-	padding-bottom: 20px; 
 }
 
 .nav-list {
@@ -225,9 +227,10 @@ a {
 }
 
 .promo-inner {
-	padding-left: 22px;
 	padding-top: 21px;
 	padding-bottom: 21px;
+	padding-left: 22px;
+	margin: 0;
 }
 
 /* проверить внутренний отступ*/
@@ -244,7 +247,6 @@ a {
 
 /* проверить ширину кнопки*/
 .button-promo {
-	display: block;
 	line-height: 18px;
 	width: 135px;
 	padding top: 10px;
@@ -287,9 +289,6 @@ a {
 	font-weight: 400;
 	color: #32425c;
 	text-transform: uppercase;
-	padding: 30px;
-	padding-bottom: 29px;
-	padding-left: 28px;
 }
 
 .page-desc .section-title {
@@ -300,13 +299,8 @@ a {
 	margin: 0;
 }
 
-.title-line {
+.pop-header {
 	background-color: #f9f5f0;
-}
-
-.page-desc .section-title,
-.page-desc .text {
-	font-kerning: none;
 }
 
 .product-list,
@@ -319,22 +313,10 @@ a {
 	list-style: none;
 }
 
-.product-list {
-	display: flex;
-}
-
-.product-item {
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 0;
-	justify-content: flex-start;
-	flex-basis: 220px;
-	height: 318px;
-	margin-right: 20px;
-}
-
 .panel {
+	/*-----Временно для сеток (раскомментировать)------
 	background-color: #ffffff;
+	*/
 	box-shadow: inset 0 0 0 1px #eaeaea;
 }
 
@@ -347,70 +329,22 @@ a {
 	opacity: 0.5;
 }
 
-.item-face {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-basis: 180px;
+.product-item {
+	font-size: 0;
+	line-height: 0;
 }
 
-/* проверить необходимость доп выравниваний*/
-.bosch-3000 {
-	padding-right: 13px;
-	margin-top: -6px;
-}
-
-/* проверить - добавить управление высотой кнопок товара от верхней границы карточки*/
-.product-image {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.product-item,
+.item-face,
 .item-name,
+.crossed,
+.button-price,
 .product-item a {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
-	text-align: center;
-}
-
-.item-actions {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	margin-top: 38px;
-}
-
-.item-name p {
-	margin: 0;
-	margin-bottom: 1px;
-}
-
-.item-name {
-	margin-top: 0px;
-	margin-bottom: 7px;
-}
-
-/* проверить внешний отступ*/
-.crossed, 
-.product-item .button-price {
-	margin-left: 2px;
-}
-
-.item-actions a {
-	box-sizing: border-box;
-	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	width: 135px;
-	margin-left: 41px;
-}
-
-.item-actions a:first-child {
-	margin-bottom: 10px;
+	
 }
 
 .item-actions .button-buy {
@@ -465,7 +399,7 @@ a {
 	padding-top: 10px;
 	background-image: url("../img/btn-price.svg");
 	background-repeat: no-repeat;
-	background-position: 43px top;
+	background-position: 45px top;
 	margin-bottom: 21px;
 }
 
@@ -473,31 +407,12 @@ a {
 	color: rgba(255,255,255,0.5);
 }
 
-.brand-list {
-	display: flex;
-}
-
-.brands-item {
-	display: flex;
-	flex-basis: 220px;
-	flex-shrink: 0;
-	margin-right: 20px;
-}
-
-.brands-item a {
-	display: flex;
-	flex-basis: 220px;
-	flex-shrink: 0;
-	height: 145px;
-	justify-content: center;
-	align-items: center;
-}
-
 .services {
 	background-color: #f1f5f7;
 }
 
 .services .section-title {
+	margin: 0;
 	color: #000000;
 }
 
@@ -535,6 +450,7 @@ a {
 .button-service:hover {
 	background-color: #293449;
 	color: #ffffff;
+	box-shadow: 0 1px 0 0px #293449;
 }
 
 .button-service:active {
@@ -553,11 +469,15 @@ a {
 }
 
 .service-title {
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 36px;
+	line-height: 24px;
 	color: #32425c;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+.service-delivery .service-title{
+	font-size: 30px;
 }
 
 .button-credit {
@@ -610,7 +530,7 @@ a {
 }
 
 .logo-footer img {
-	padding-top: 20px;
+	padding-top: 19px;
 	padding-right: 41px;
 	padding-bottom: 25px;
 	padding-left: 41px;

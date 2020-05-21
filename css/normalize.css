@@ -347,3 +347,8 @@ template {
 [hidden] {
   display: none;
 }
+
+/* добавил студент*/
+p {
+  margin: 0;
+}

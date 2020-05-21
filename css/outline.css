@@ -1,0 +1,510 @@
+
+html {
+	padding:0;
+	margin:0;
+}
+
+
+/*----------СЕТКА -----------*/
+/*--index--*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header {
+	margin:0;
+	padding:0;
+	width: 100%;
+	/*временно*/
+	height: 320px;
+}
+
+.top-line {
+ 	margin:0;
+	padding:0;
+	width: 100%;
+ 	/*временно*/
+	height: 42px;
+}
+
+.logo-header {
+	width:220px;
+	height: 47px;
+}
+
+.user-nav-line {
+	height: 158px;
+}
+
+.header-nav {
+	height: 60px;
+}
+
+.description {
+	padding: 42.5px 30px 44.5px  ;
+	width: 200px;
+}
+
+.header-contacts {
+	width: 270px;
+	height: 45px;
+}
+
+.top-line .container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button-bookmarks {
+	margin-left: auto;
+}
+
+.logo-header {
+	margin-right: auto;
+}
+
+.user-nav {
+	display: flex;
+}
+
+.user-nav-line {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-contacts,
+.login-block {
+	margin-top: 46px;
+	display: flex;
+}
+
+.header-contacts {
+	flex-direction: column;
+	width: 270px;
+}
+
+.header-contacts a {
+	padding-top: 5px;
+	height: 45px;
+}
+
+.header-contacts p {
+	margin-top: 2px;
+	align-self: center;
+}
+
+.login-block {
+	justify-content: flex-right;
+	align-items: flex-start;
+}
+
+.login-block .reg {
+	width: 150px;
+	margin-left: 10px;
+}
+
+.login-block .enter {
+	width: 121px;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	padding: 0px 18px 0 22px;
+	margin: 0;
+	flex-shrink: 0;
+}
+
+/*-----проверить выравнивание------*/
+.nav-list a {
+	text-align: center;
+	padding: 0;
+	padding: 0 28.5px;
+	padding-top: 17px;
+	padding-bottom: 20px;
+}
+
+.promo {
+	display: flex;
+	width: 620px;
+	margin: 59px 0;
+}
+
+.promo-left {
+	margin-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.promo-block {
+	margin-bottom: 20px;
+}
+
+.material {
+	margin-right: 20px;	
+}
+
+.promo-inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.slider {
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.discount p {
+	padding-bottom: 12px;
+}
+
+.delivery {
+	margin-bottom: 0px;
+}
+
+.pop {
+	margin-bottom: 70px;
+}
+
+.pop-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 14px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/*----------сетка: популярные списки-----------*/
+.pop-header .section-title {
+	margin-left: 14px;
+	padding-top: 1px;
+}
+
+.all-brands {
+	margin-right: 5px;
+}
+
+.product-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.product-item {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 220px;
+	height: 318px;
+}
+
+.item-face {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 178px;
+	flex-shrink: 0;
+}
+
+.item-name {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+.button-price, .crossed {
+	align-self: stretch;
+	text-align: center;
+}
+
+.item-actions {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	margin-top: 38px;
+}
+
+.item-actions a {
+	box-sizing: border-box;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	width: 135px;
+	margin-left: 41px;
+}
+
+.item-actions a:first-child {
+	margin-bottom: 10px;
+}
+
+/*---PixelPerfect-Start---*/
+.bosch-9000 .button-price {
+	margin-left: 4px;
+	background-position: 43px top;
+}
+
+.bosch-9000 .crossed {
+	margin-left: 3px;
+}
+
+.bosch-3000 .item-name {
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+.bosch-3000 .crossed {
+	margin-right: 1px;
+}
+
+.bosch-6000 .crossed {
+	margin-left: 2px;
+}
+
+/* проверить необходимость доп выравниваний*/
+.bosch-3000 .product-image{
+	padding-right: 13px;
+	padding-bottom: 4px;
+}
+
+/* проверить необходимость доп выравниваний*/
+.bosch-6000 .product-image{
+	padding-right: 10px;
+	padding-bottom: 2px;
+}
+
+/* проверить необходимость доп выравниваний*/
+.bosch-9000 .product-image{
+	padding-top: 2px;
+}
+
+.brands-item img[alt*="BOSCH"] {
+	padding-top: 1px;
+}
+
+.brands-item img[alt*="Makita"] {
+	padding-bottom: 5px;
+	padding-right: 1px;
+}
+
+.brands-item img[alt*="DeWALT"] {
+	padding-bottom: 4px;
+	padding-right: 0px;
+}
+
+.brands-item img[alt*="Интерскол"] {
+	padding-bottom: 14px;
+	padding-right: 2px;
+}
+
+.brands-item img[alt*="Hitachi"] {
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+.brands-item img[alt*="LG"] {
+	padding-bottom: 1px;
+	padding-right: 3px;
+}
+
+.brands-item img[alt*="AEG"] {
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+
+.brands-item img[alt*="metabo"] {
+	padding-bottom: 7px;
+	padding-left: 4px;
+}
+/*---PixelPerfect-End---*/
+
+/*------------производители-------------*/
+.brand-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.brands-item {
+	display: flex;
+	flex-basis: 220px;
+}
+
+.brands-item:nth-child(1),
+.brands-item:nth-child(2),
+.brands-item:nth-child(3),
+.brands-item:nth-child(4) {
+ margin-bottom: 20px;
+}
+
+.brands-item a {
+	display: flex;
+	flex-basis: 220px;
+	flex-shrink: 0;
+	height: 145px;
+	justify-content: center;
+	align-items: center;
+}
+
+.services {
+	padding: 64px 0 0;
+}
+
+.services .good-store {
+	margin: 25px 0 70px;
+
+	/*временно*/
+	padding-bottom: 2px;
+}
+
+.service-container {
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.service-container {
+	padding-bottom: 99px;
+}
+
+.services ul,
+.services li,
+.services p, 
+.services h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.service-info {
+	margin-left: 80px;
+}
+
+.service-info-item .service-desc {
+	margin-top: 30px;
+	width: 319px;
+	padding-right: 12px;
+}
+
+.service-garanty .service-desc {
+	margin-top: 30.5px;
+}
+
+/*проверить отступ*/
+.service-credit .button-credit {
+	margin-top: 30px;
+}
+
+.info p, 
+.info h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.info {
+	margin: 70px 0;
+	display: flex;
+}
+
+.info-company {
+	width: 480px;
+	margin-right: auto;
+}
+
+.info-contacts {
+	width: 300;
+}
+
+.info .text {
+	margin-top: 24px;
+}
+
+.info-list {
+	padding-left: 37px;
+	margin:0;
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+
+.info-item {
+	margin-bottom: 12px;
+}
+
+.info-company .button {
+	display: block;
+	margin-top: 0px;
+	width: 220px;
+}
+
+.map-link {
+	line-height: 0;
+	display: block;
+	margin: 30px 0 25px;
+}
+
+.info-contacts .button {
+	width: 300px;
+}
+
+/*------сетка footer-------*/
+.logo-container {
+	display: flex;
+}
+
+.logo-footer {
+	margin-right: auto;
+}
+
+.footer-nav {
+	padding: 0;
+	padding-bottom: 13px;
+	margin: 0;
+	display: flex;
+	width: 547px;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.adress-container {
+	display: flex;
+	padding-bottom: 54px;
+}
+
+.footer-address {
+	margin-right: auto;
+	margin-top: 16px;
+	margin-left: 1px;
+}
+
+.footer-categories {
+	padding: 0;
+	margin: 0;
+	width: 524px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyrights .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 11px 0;
+}
+
+.feedback {
+	display: flex;
+	justify-content: space-between;
+	width: 286px;
+	padding-right: 13px;
+	margin-left: 118px;
+}
+
+.all-rights-reserved {
+	margin-right: auto;
+}
