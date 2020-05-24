@@ -6,8 +6,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/outline.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/outline.css">
 	</head>
 	<body class="index-page">
 		<header class="header">
@@ -26,7 +26,7 @@
 			</div>
 			<div class="user-nav-line container">
 				<p class="description">
-					Интернет-магазин строительных материалов<br> и инструментов для ремонта
+					Интернет-магазин строительных материалов<br>и инструментов для ремонта
 				</p>
 				<div class="header-contacts">
 					<a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -111,7 +111,7 @@
 							</div>
 							<h3 class="item-name">Перфоратор BOSCH<br class="test">BFG 9000</h3>
 							<span class="crossed">32500 Р.</span>
-							<a class="btn button-price" href="">25500 Р.</a>
+							<a class="btn button-price" href=""><span>25500 Р.</span></a>
 						</li>
 						<li class="product-item panel bosch-3000 new">
 							<div class="item-face">
@@ -125,7 +125,7 @@
 							</div>
 							<h3 class="item-name">Перфоратор BOSCH<br>BFG 3000</h3>
 							<span class="crossed">22500 Р.</span>
-							<a class="btn button-price" href="">15500 Р.</a>
+							<a class="btn button-price" href=""><span>15500 Р.</span></a>
 						</li>
 						<li class="product-item panel bosch-6000">
 							<div class="item-face">
@@ -139,7 +139,7 @@
 							</div>
 							<h3 class="item-name">Перфоратор BOSCH<br>BFG 6000</h3>
 							<span class="crossed">30500 Р.</span>
-							<a class="btn button-price" href="">25500 Р.</a>
+							<a class="btn button-price" href=""><span>25500 Р.</span></a>
 						</li>
 						<li class="product-item panel bosch-3000 new">
 							<div class="item-face">
@@ -153,7 +153,7 @@
 							</div>
 							<h3 class="item-name">Перфоратор BOSCH<br>BFG 2000</h3>
 							<span class="crossed"></span>
-							<a class="btn button-price" href="">12500 Р.</a>
+							<a class="btn button-price" href=""><span>12500 Р.</span></a>
 						</li>
 					</ul>
 				</section>
@@ -322,29 +322,24 @@
 				</div>
 			</div>
 		</footer>
-		<div class="visually-hidden ">
-			<section class="visually-hidden write-us pop-up-shadow">
+		<div class="vh ">
+			<section class="vh write-us pop-up-shadow">
+				<h2 class="visually-hidden">Написать нам письмо</h2>
 				<form action="https://echo.htmlacademy.ru" method="post" id="write-us">
 					<button type="button" class="close-button">Закрыть</button>
 					<div class="write-us-contacts">
 						<p class="write-us-name">
-							<label>
-								Ваше имя:
-								<input type="text" name="write-us-user-name" placeholder="Имя Фамилия" value="">
-							</label>
+							<label for="write-us-user-name">Ваше имя:</label>
+							<input type="text" name="write-us-user-name" id="write-us-user-name" placeholder="Имя Фамилия" value="">
 						</p>
 						<p class="write-us-email">
-							<label>
-								Ваш e-mail:
-								<input type="text" name="write-us-user-email" placeholder="email@example.com" value="">
-							</label>
+							<label for="write-us-user-email">Ваш e-mail:</label>
+							<input type="text" name="write-us-user-email" id="write-us-user-email" placeholder="email@example.com" value="">
 						</p>
 					</div>
 					<p class="write-us-text">
-						<label>
-							Текст письма:
-							<textarea form="write-us" name="write-us-user-text" placeholder="В свободной форме" rows="4"></textarea>
-						</label>
+						<label for="write-us-user-text">Текст письма:</label>
+						<textarea form="write-us" name="write-us-user-text" id="write-us-user-text" placeholder="В свободной форме" rows="4"></textarea>
 					</p>
 					<div class="button-area">
 						<button type="submit" class="btn button button-write-us">Оформить заказ</button>
@@ -360,7 +355,7 @@
 				</p>
 				<button type="button" class="close-button">Закрыть</button>
 			</section>
-			<section class="visually-hidden item-added pop-up-shadow">
+			<section class="item-added pop-up-shadow">
 				<h3 class="modal-title">Товар добавлен в корзину!</h3>
 				<div class="button-area">
 					<a href="#" class="btn button">Оформить заказ</a>

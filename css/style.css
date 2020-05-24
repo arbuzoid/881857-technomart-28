@@ -149,6 +149,7 @@ a {
 }
 
 .header-contacts a {
+	box-sizing: border-box;
 	font-size: 21px;
 	line-height: 30px;
 	color: #ee3643;
@@ -177,11 +178,16 @@ a {
 	color: #ee3643;
 }
 
+.name {
+	color: #000000;
+}
+
 .name:hover {
 	color: #000000;
 }
 
-.button-login:active {
+.button-login:active,
+.name:active {
 	color: #c5c5c5;
 }
 
@@ -231,6 +237,12 @@ a {
 	padding-bottom: 21px;
 	padding-left: 22px;
 	margin: 0;
+}
+
+.discount .promo-inner {
+	padding-top: 20px;
+	padding-bottom: 22px;
+	padding-left: 23px;
 }
 
 /* проверить внутренний отступ*/
@@ -294,9 +306,13 @@ a {
 .page-desc .section-title {
 	color: #000000;
 	padding-top: 65px;
-	padding-bottom: 0px;
+	padding-bottom: 25px;
 	padding-left: 0px;
 	margin: 0;
+}
+
+.page-desc .text {
+	padding-bottom: 67px;
 }
 
 .pop-header {
@@ -314,9 +330,7 @@ a {
 }
 
 .panel {
-	/*-----Временно для сеток (раскомментировать)------
 	background-color: #ffffff;
-	*/
 	box-shadow: inset 0 0 0 1px #eaeaea;
 }
 
@@ -344,7 +358,6 @@ a {
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
-	
 }
 
 .item-actions .button-buy {
@@ -389,7 +402,11 @@ a {
 	margin-bottom: 13px;
 }
 
-/*проверить как сделан фон у кнопки*/
+.button-price span {
+	padding: 7px 20px;
+	background-color: #EE3643;
+}
+
 .product-item .button-price {
 	display: block;
 	font-size: 17px;
@@ -397,6 +414,7 @@ a {
 	color: #ffffff;
 
 	padding-top: 10px;
+	padding-left: 1px;
 	background-image: url("../img/btn-price.svg");
 	background-repeat: no-repeat;
 	background-position: 45px top;
@@ -437,8 +455,8 @@ a {
 	font-weight: 700;
 	background-color: #32425c;
 	width: 240px;
-	padding-top: 13.5px;
-	padding-bottom: 17.5px;
+	padding-top: 14px;
+	padding-bottom: 17px;
 	padding-left: 22px;
 	text-align: left;
 	border: none;
@@ -572,8 +590,8 @@ a {
 .write-us textarea {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
-	line-height: 24px;
-	padding: 7px 12px;
+	line-height: 23px;
+	padding: 5px 12px;
 	border: 2px solid #c5c5c5;
 	border-radius: 2px;
 }
@@ -673,7 +691,8 @@ a {
 
 .column-title {
 	font-size: 13px;
-	padding: 10px 18px;
+	line-height: 18px;
+	padding: 10px 0px 10px 18px;
 	text-transform: uppercase;
 	background-color: #f7f3ec;
 	border-radius: 2px;
@@ -734,6 +753,11 @@ a {
 	border-radius: 2px;
 }
 
+.pagination-list .button-action {
+	border: none;
+	box-shadow: inset 0 0 0px 1px #e5e5e5;
+}
+
 .filter-show {
 	border-radius: 0px;
 }
@@ -746,7 +770,18 @@ a {
 	border: 1px solid #ee3643;
 }
 
+.pagination-list .button-action:hover {
+	border: none;
+	box-shadow: inset 0 0 0px 1px #c5c5c5;
+}
+
+.pagination-list .button-action:active {
+	border: none;
+	box-shadow: inset 0 0 0px 1px #ee3643;
+}
+
 .current {
+	border-radius: 3px;
 	color: #ffffff;
 	border: 1px solid #ee3643;
 	background-color: #ee3643;
@@ -755,6 +790,12 @@ a {
 .current:hover {
 	border: 1px solid #ee3643;
 	background-color: #ee3643;
+}
+
+.pagination-list .current,
+.pagination-list .current:hover {
+	border: none;
+	box-shadow: inset 0 0 0px 1px #ee3643;
 }
 
 .sort-type {
@@ -770,10 +811,6 @@ a {
 .sort-type:active {
 	color: #ee3643;
 	border-bottom: none;
-}
-
-.pagination-item {
-	display: inline-block;
 }
 
 .page-desc {

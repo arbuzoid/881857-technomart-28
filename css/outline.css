@@ -4,6 +4,21 @@ html {
 	margin:0;
 }
 
+html,
+body {
+	width: 1200px;
+}
+
+body {
+	/*background-image: url("../indexPP.jpg");*/
+	/*background-image: url("../indexPP-garanty.jpg");*/
+	/*background-image: url("../indexPP-credit-write-us.jpg");*/
+	/*background-image: url("../catalogPP.jpg");*/
+	/*background-image: url("../catalogPP-cart-add.jpg");*/
+	background-size: 1200px auto;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
 
 /*----------СЕТКА -----------*/
 /*--index--*/
@@ -42,9 +57,10 @@ html {
 	height: 60px;
 }
 
-.description {
+.user-nav-line .description {
 	padding: 42.5px 30px 44.5px  ;
-	width: 200px;
+	width: 199px;
+	flex-shrink: 0;
 }
 
 .header-contacts {
@@ -83,6 +99,8 @@ html {
 .header-contacts {
 	flex-direction: column;
 	width: 270px;
+	margin-right: 51px;
+	margin-left: auto;
 }
 
 .header-contacts a {
@@ -112,18 +130,18 @@ html {
 .nav-list {
 	display: flex;
 	justify-content: space-around;
-	padding: 0px 18px 0 22px;
+	padding: 0 19px 0 23px;
 	margin: 0;
 	flex-shrink: 0;
 }
 
-/*-----проверить выравнивание------*/
+/*--проверить выравнивание--*/
 .nav-list a {
 	text-align: center;
 	padding: 0;
 	padding: 0 28.5px;
 	padding-top: 17px;
-	padding-bottom: 20px;
+	padding-bottom: 19px;
 }
 
 .promo {
@@ -171,12 +189,12 @@ html {
 .pop-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 4px 14px;
+	padding: 25px 14px;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 }
 
-/*----------сетка: популярные списки-----------*/
+/*----------сетка главная: популярные списки-----------*/
 .pop-header .section-title {
 	margin-left: 14px;
 	padding-top: 1px;
@@ -188,9 +206,11 @@ html {
 
 .product-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+	align-content: center;
 }
 
 .product-item {
@@ -201,6 +221,11 @@ html {
 	align-items: center;
 	flex-basis: 220px;
 	height: 318px;
+}
+
+/*проверить отступ*/
+.inner-page .product-item {
+	margin-bottom: 18px;
 }
 
 .item-face {
@@ -218,7 +243,8 @@ html {
 	text-align: center;
 }
 
-.button-price, .crossed {
+.button-price, 
+.crossed {
 	align-self: stretch;
 	text-align: center;
 }
@@ -236,14 +262,18 @@ html {
 	font-size: 14px;
 	line-height: 18px;
 	width: 135px;
-	margin-left: 41px;
+	margin-right: 3px;
 }
 
 .item-actions a:first-child {
 	margin-bottom: 10px;
 }
 
-/*---PixelPerfect-Start---*/
+/*-------------------PixelPerfect-Start---------------*/
+.promo-block.discount {
+	padding-top: 1px;
+}
+
 .bosch-9000 .button-price {
 	margin-left: 4px;
 	background-position: 43px top;
@@ -266,25 +296,34 @@ html {
 	margin-left: 2px;
 }
 
-/* проверить необходимость доп выравниваний*/
 .bosch-3000 .product-image{
 	padding-right: 13px;
 	padding-bottom: 4px;
 }
 
-/* проверить необходимость доп выравниваний*/
 .bosch-6000 .product-image{
 	padding-right: 10px;
 	padding-bottom: 2px;
 }
 
-/* проверить необходимость доп выравниваний*/
 .bosch-9000 .product-image{
 	padding-top: 2px;
 }
 
+.bosch-3000 .item-name{
+	padding-right: 1px;
+}
+
+.bosch-6000 .item-name{
+	padding-left: 1px;
+}
+
+.bosch-9000 .item-name{
+	padding-left: 1px;
+}
+
 .brands-item img[alt*="BOSCH"] {
-	padding-top: 1px;
+	padding-top: 0px;
 }
 
 .brands-item img[alt*="Makita"] {
@@ -293,12 +332,12 @@ html {
 }
 
 .brands-item img[alt*="DeWALT"] {
-	padding-bottom: 4px;
+	padding-bottom: 6px;
 	padding-right: 0px;
 }
 
 .brands-item img[alt*="Интерскол"] {
-	padding-bottom: 14px;
+	padding-bottom: 16px;
 	padding-right: 2px;
 }
 
@@ -308,17 +347,17 @@ html {
 }
 
 .brands-item img[alt*="LG"] {
-	padding-bottom: 1px;
+	padding-bottom: 2px;
 	padding-right: 3px;
 }
 
 .brands-item img[alt*="AEG"] {
-	padding-bottom: 2px;
+	padding-bottom: 3px;
 	padding-left: 0px;
 }
 
 .brands-item img[alt*="metabo"] {
-	padding-bottom: 7px;
+	padding-bottom: 8px;
 	padding-left: 4px;
 }
 /*---PixelPerfect-End---*/
@@ -353,14 +392,14 @@ html {
 }
 
 .services {
-	padding: 64px 0 0;
+	padding: 65px 0 0;
 }
 
 .services .good-store {
-	margin: 25px 0 70px;
+	margin: 24px 0 70px;
 
 	/*временно*/
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 }
 
 .service-container {
@@ -490,11 +529,15 @@ html {
 	align-items: center;
 }
 
+.copyrights {
+	padding: 27px 0 26px 0;
+}
+
 .copyrights .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 11px 0;
+	
 }
 
 .feedback {
@@ -507,4 +550,227 @@ html {
 
 .all-rights-reserved {
 	margin-right: auto;
+}
+
+/*-----------------СЕТКА КАТАЛОГ------------------*/
+.login-block {
+	width: 299px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.index-page .login-block {
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.button-login {
+	width: 299px;
+}
+
+.acc-links {
+	padding-top: 5px;
+	align-self: center;
+}
+
+.breadcrumbs-list {
+	display: flex;
+	margin: 17px 0;
+}
+
+.breadcrumbs-item {
+	margin-right: 34px; 
+}
+
+.section-title.page-title {
+	padding: 30px 0 30px 29px;
+	margin-bottom: 20px;
+}
+
+.catalog-list {
+	display: flex;
+}
+
+.filter-section {
+	display: flex;
+	flex-shrink: 0;
+	width: 220px;
+	height: 720px;
+	margin-right: 21px;
+}
+
+.filter-form {
+	display: flex;
+	flex-direction: column;
+	height: 720px;
+	justify-content: flex-start;
+}
+
+.filter-block {
+	display: flex;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-title {
+	padding-top: 14px;
+	padding-bottom: 11px;
+}
+
+.range-input-wrap {
+	height: 80px;
+	background-color: #F7F3EC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+}
+
+.range-from-to {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.range {
+	width:95px;
+}
+
+.range, 
+.dash {
+	padding: 10px 0;	
+}
+
+.filter-producer {
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+
+.filter-power {
+	padding-top: 18px;
+	padding-bottom: 21px;
+}
+
+.filter-producer-list {
+	margin-bottom: 10px;
+}
+
+.filter-producer-list li,
+.filter-power-list li {
+	padding-bottom: 16px;
+}
+
+.filter-producer-list label {
+	padding-left: 12px;
+}
+
+.filter-power-list label {
+	padding-left: 10px;
+}
+
+.filter-show {
+	margin-top: auto;
+}
+
+.sort {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+	margin-bottom: 28px;
+}
+
+.column-title {
+	line-height: 18px;
+}
+
+.sort.column-title {
+	padding-left: 19px;
+	padding-bottom: 9px;
+}
+
+.sort-list {
+	display: flex;
+	padding: 2px 0;
+	line-height: 14px;
+	width: 460px;
+	justify-content: space-between;
+	padding-right: 17px;	
+}
+
+.pagination-list {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 59px;
+}
+
+.pagination-list .button-action{
+	margin-right: 10px;
+	padding: 10px 0;
+	width: 38px;
+}
+
+.button-action.next {
+	width: 140px;
+	padding: 10px 0;
+}
+
+.item-added.pop-up-shadow {
+	width: 620px;
+	margin: 0 auto;
+}
+
+.item-added .button-area {
+	display: flex;
+	padding: 37px 112px 37px 114px;
+}
+
+.item-added .modal-title {
+	text-align: center;
+	padding-top:  73px;
+	padding-bottom: 67px;
+}
+
+.write-us.pop-up-shadow {
+	width: 620px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.write-us-contacts {
+	margin-top: 46px;
+	display: flex;
+	flex-basis: 220px;
+	justify-content: space-between;
+	padding: 0 80px;
+}
+
+.write-us-contacts label {
+	margin-bottom: 18px;
+}
+
+.write-us-name,
+.write-us-email {
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.write-us-text {
+	margin-top: 13px;
+	margin-bottom: 37px;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.write-us-text label {
+	margin-bottom: 11px;
 }
