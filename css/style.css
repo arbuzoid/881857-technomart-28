@@ -230,6 +230,43 @@ a {
 .promo-block {
 	color: #ffffff;
 	width: 300px;
+	position: relative;
+}
+
+.promo-block::before {
+	position: absolute;
+	content: "";
+	width: 44%;
+	height: 123px;
+	top: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.promo-block.material::before {
+	background-image: url("../img/icon-1.svg");
+	background-position: 45px 53%;
+}
+
+.promo-block.tools::before {
+	background-image: url("../img/icon-2.svg");
+	background-position: 26px 55%;
+}
+
+.promo-block.machine::before {
+	background-image: url("../img/icon-3.svg");
+	background-position: 23px 51%;
+}
+
+.promo-block.discount::before {
+	background-image: url("../img/icon-4.svg");
+	background-position: 28px 26px;
+}
+
+.promo-block.delivery::before {
+	background-image: url("../img/icon-5.svg");
+	background-position: 23px 53%;
 }
 
 .promo-inner {

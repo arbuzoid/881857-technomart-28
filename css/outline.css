@@ -274,6 +274,10 @@ body {
 	padding-top: 1px;
 }
 
+.material .promo-inner {
+	padding-left: 23px;
+}
+
 .bosch-9000 .button-price {
 	margin-left: 4px;
 	background-position: 43px top;
