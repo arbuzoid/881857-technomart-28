@@ -18,8 +18,16 @@
 					</a>
 					<p class="user-nav">
 						<!--здесь будет форма поиска-->
-						<a href="" class="btn button-bookmarks">Закладки: 0</a>
-						<a href="" class="btn button-cart has-item">Корзина: 10</a>
+						<a href="" class="btn button-bookmarks">
+							<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+								<path fill="#ffffff" d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z"/>
+							</svg>
+							<span>Закладки: 0</span>
+						</a>
+						<a href="" class="btn button-cart has-item">
+							<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95z"/></svg>
+							<span>Корзина: 10</span>
+						</a>
 						<a href="" class="btn button-order">Оформить заказ</a>
 					</p>
 				</div>
@@ -29,17 +37,27 @@
 					Интернет-магазин строительных материалов<br>и инструментов для ремонта
 				</p>
 				<div class="header-contacts">
-					<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+					<a href="tel:+78125550555">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.572 18.985H14.631C10.502 18.497 7.474 16.577 5.272 14.121C3.062 11.66 1.318 8.49202 0.977997 4.22802V3.08402C1.056 2.31002 1.437 1.78002 1.876 1.32702C2.425 0.76602 3.25 0.0440198 4.002 0.0190198C4.556 0.00101977 5.502 0.39902 5.881 0.91802C6.21 1.36402 6.385 2.25702 6.537 2.92102C6.691 3.59202 7.042 4.56402 6.945 5.21002C6.797 6.21702 5.458 6.64402 5.066 7.37602C6.373 10.511 8.509 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z" fill="#B7BFC8"/></svg>
+						<span>+7 (812) 555-05-55</span>
+					</a>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="login-block">
-					<div class="btn button-login">
-						<a href="" class="name">Равшан Джамшутович</a>
-						<a href="" class="unlogin visually-hidden">Выйти</a>
+					<div class="btn button-login user">
+						<a href="" class="name">
+							<svg class="user-icon" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg" width="20" height="18"><path  d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0S5.98 2.28 5.98 5.08c0 1.8.74 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39S0 18 0 18h20s.02-3.1-2.12-3.83z"/></svg>
+							<span>Равшан Джамшутович</span>
+						</a>
+						<a href="#" class="logout-icon">
+							<svg fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg" width="21" height="17"><g><path d="M21 8.5L12.1 0v6h-6v5h6v6z"/><path d="M3.1 14V3c0-.3.2-1 1-1h5V0h-5c-2.2 0-3 1.8-3 3v11c0 1.2.8 3 3 3h5v-2h-5c-.8 0-1-.7-1-1z"/></g></svg>
+							<span class="visually-hidden">Выйти</span>
+						</a>
+						
 					</div>
 					<div class="acc-links">
 						<a href="">Мои заказы</a>
-						<!--точка между ссылками shape-user-dot.svg-->
+						<svg class="shape-user-dot" xmlns="http://www.w3.org/2000/svg" width="4" height="4"><defs><filter id="a" x="0" y="0" width="4" height="4" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#32425c"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><circle data-name="Shape 1 copy" cx="2" cy="2" r="2" fill="#fff" filter="url(#a)"/></svg>
 						<a href="">Личный кабинет</a>
 					</div>
 				</div>
@@ -59,10 +77,20 @@
 		<main>
 			<div class="container">
 				<ul class="breadcrumbs-list">
-					<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-					<li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
-					<li class="breadcrumbs-item"><a>Перфораторы</a></li>
+					<li class="breadcrumbs-item">
+						<a href="index.html">
+							<svg fill="#C1C6CE" xmlns="http://www.w3.org/2000/svg" width="15" height="12"><g><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 00-.08-.047.5512.5512 0 00-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012-.033.006-.063.012-.095.025-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.5011.5011 0 00-.045.706c.099.112.237.169.375.169.118 0 .236-.041.331-.125L8 1.677l6.169 5.438c.096.084.214.125.331.125a.5001.5001 0 00.331-.875z"/></g></svg>
+							<span class="visually-hidden">Главная</span></a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="catalog.html"><span>Каталог</span></a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="#"><span>Инструмент</span></a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a><span>Перфораторы</span></a>
+					</li>
 				</ul>
 				<h1 class="section-title page-title">Перфораторы</h1>
 				<div class="catalog-list">
@@ -73,12 +101,23 @@
 							<fieldset class="filter-block">
 								<legend class="filter-title">Цена:</legend>
 								<div class="range-input-wrap">
-									<input type="range" min="0" max="35000" step="500">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toogle toogle-min" tabindex="0"></div>
+									<div class="toogle toogle-max" tabindex="0"></div>
+									
 								</div>
-								<div class="range-from-to">
-									<div class="range" title="Цена от">0</div>
+								<div class="price-controls">
+									<div class="range">
+										<label for="min-price" class="visually-hidden">Цена от</label>
+										<input  type="number" name="min-price" id="min-price" value="0" title="Цена от">
+									</div>
 									<div class="dash">—</div>
-									<div class="range" title="Цена до">30000</div>
+									<div class="range">
+										<label for="min-price" class="visually-hidden">Цена до</label>
+										<input type="number" name="max-price" id="max-price" value="30000" title="Цена до">
+									</div>
 								</div>
 							</fieldset>
 							<fieldset class="filter-block">
@@ -126,11 +165,17 @@
 						<div class="sort column-title ">
 							<p>Сортировка:</p>
 							<div class="sort-list">
-								<a class="sort-type">По цене</a>
-								<a class="sort-type" href="">По типу</a>
-								<a class="sort-type" href="">По функционалу</a>
-								<a class="sort-type arrow" href="">По возрастанию<!--CSS по возрастанию--></a>
-								<a class="sort-type arrow" href="">По убыванию<!--CSS по убыванию--></a>
+								<a class="sort-type sort-price active">По цене</a>
+								<a class="sort-type sort-mode" href="">По типу</a>
+								<a class="sort-type sort-func" href="">По функционалу</a>
+								<a class="sort-type arrow up active" href="">
+									<span class="visually-hidden">По возрастанию</span>
+									<svg width="11" height="10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+								</a>
+								<a class="sort-type arrow down" href="">
+									<span class="visually-hidden">По убыванию</span>
+									<svg width="11" height="10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+								</a>
 							</div>
 						</div>
 						<section class="item-list">
@@ -317,9 +362,24 @@
 				<div class="container">
 					<p class="all-rights-reserved">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
 					<ul class="social-links">
-						<li><a href="#">мы ВКонтакте<!--здесь иконка ссылки--></a></li>
-						<li><a href="#">мы на Фэйсбук<!--здесь иконка ссылки--></a></li>
-						<li><a href="#">мы в Инстаграм<!--здесь иконка ссылки--></a></li>
+						<li>
+							<a href="#" class="vk">
+								<span class="visually-hidden">мы ВКонтакте</span>
+								<svg width="26" height="15"><path fill="#FFF" d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.72.74-5.25 1.6-2.15 2.24-3.47 2.04-4.03-.2-.53-1.37-.4-1.37-.4L20.7.72c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.52.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.88 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"/></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="fb">
+								<span  class="visually-hidden">мы на Фэйсбук</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22"><path fill="#FFF" d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="insta">
+								<span class="visually-hidden">мы в Инстаграм</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path  fill="#FFF" d="M18 0H3a3 3 0 00-3 3v15a3 3 0 003 3h15a3 3 0 003-3V3a3 3 0 00-3-3zm-7.5 7a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM18 18H3V9h1.18a6.5 6.5 0 1012.64 0H18v9zm0-11h-4V3h4v4z"/></svg>
+							</a>
+						</li>
 					</ul>
 					<div class="feedback">
 						<p class="email">Обратная связь:<br>
@@ -332,13 +392,17 @@
 				</div>
 			</div>
 		</footer>
-		<section class="item-added pop-up-shadow">
-			<h3 class="modal-title">Товар добавлен в корзину!</h3>
-			<div class="button-area">
-				<a href="#" class="btn button">Оформить заказ</a>
-				<button class="btn button button-resume">Продолжить покупки</button>
-			</div>
-			<button type="button" class="close-button">Закрыть</button>
-		</section>
+		<div class="item-added-container">
+			<section class="item-added pop-up-shadow">
+				<h3 class="modal-title">Товар добавлен в корзину!</h3>
+				<div class="button-area">
+					<a href="#" class="btn button">Оформить заказ</a>
+					<button class="btn button button-resume">Продолжить покупки</button>
+				</div>
+				<button type="button" class="close-button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+			</section>
+		</div>
 	</body>
 </html>
