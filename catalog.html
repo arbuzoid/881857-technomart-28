@@ -97,7 +97,6 @@
 					<div class="filter-section">
 						<form class="filter-form" action="https://echo.htmlacademy.ru" method="post" id="filter">
 							<p class="column-title">Фильтр:</p>
-							<!--Ползунки выбора цены еще будут дорабатываться пока не знаю как-->
 							<fieldset class="filter-block">
 								<legend class="filter-title">Цена:</legend>
 								<div class="range-input-wrap">
@@ -106,7 +105,6 @@
 									</div>
 									<div class="toogle toogle-min" tabindex="0"></div>
 									<div class="toogle toogle-max" tabindex="0"></div>
-									
 								</div>
 								<div class="price-controls">
 									<div class="range">
@@ -123,24 +121,24 @@
 							<fieldset class="filter-block">
 								<legend class="filter-title filter-producer">Производители:</legend>
 								<ul class="filter-producer-list">
-									<li>
-										<input type="checkbox" name="bosch" id="bosch" checked>
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
 										<label for="bosch">Bosch</label>
 									</li>
-									<li>
-										<input type="checkbox" name="interscol" id="interscol">
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="interscol">
 										<label for="interscol">Интерскол</label>
 									</li>
-									<li>
-										<input type="checkbox" name="makita" id="makita" checked>
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
 										<label for="makita">Makita</label>
 									</li>
-									<li>
-										<input type="checkbox" name="dewalt" id="dewalt">
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
 										<label for="dewalt">Dewalt</label>
 									</li>
-									<li>
-										<input type="checkbox" name="hitachi" id="hitachi" checked disabled>
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi" checked disabled>
 										<label for="hitachi">Hitachi</label>
 									</li>
 								</ul>
@@ -148,12 +146,12 @@
 							<fieldset class="filter-block">
 								<legend class="filter-title filter-power">Питание:</legend>
 								<ul class="filter-power-list">
-									<li>
-										<input type="radio" name="power" value="batery" id="batery">
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-radio" type="radio" name="power" value="batery" id="batery">
 										<label for="batery">Аккумуляторные</label>
 									</li>
-									<li>
-										<input type="radio" name="power" value="net" id="net" disabled>
+									<li class="filter-option">
+										<input class="visually-hidden filter-input-radio" type="radio" name="power" value="net" id="net">
 										<label for="net">Сетевые</label>
 									</li>
 								</ul>
@@ -327,7 +325,7 @@
 			<section class="page-desc">
 				<div class="container">
 					<h2 class="section-title">Пара слов о перфораторах</h2>
-					<p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+					<p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</div>
 			</section>
 		</main>

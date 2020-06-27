@@ -434,7 +434,6 @@ body {
 	margin-top: 25.5px;
 }
 
-/*проверить отступ*/
 .service-credit .button-credit {
 	margin-top: 26px;
 }
@@ -464,14 +463,25 @@ body {
 }
 
 .info-list {
-	padding-left: 37px;
 	margin:0;
-	margin-top: 2px;
-	margin-bottom: 20px;
+	margin-top: 4px;
+	margin-bottom: 19px;
 }
 
 .info-item {
+	position: relative;
+	padding-left: 37px;
 	margin-bottom: 12px;
+}
+
+.info-item::before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 2px;
+	background: url("../img/red-list-marker.svg") no-repeat;
+	top: 11px;
+	left: 0px;
 }
 
 .info-company .button {
@@ -711,12 +721,14 @@ body {
 	padding-bottom: 16px;
 }
 
-.filter-producer-list label {
-	padding-left: 12px;
+.filter-option label {
+	padding-left: 35px;
+	font-size: 15px;
+	line-height: 19px;
 }
 
 .filter-power-list label {
-	padding-left: 10px;
+	padding-bottom: 2px;
 }
 
 .filter-show {
@@ -800,8 +812,13 @@ body {
 	left: 82px;
 }
 
+.on-the-map {
+	position: relative;
+}
+
 .item-added .close-button,
-.write-us .close-button {
+.write-us .close-button,
+.on-the-map .close-button {
 	position: absolute;
 	right: 10px;
 	top: 18px;

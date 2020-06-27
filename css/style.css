@@ -895,6 +895,7 @@ a {
 
 .button-write-us {
 	width:100%;
+	cursor: pointer;
 }
 
 .button-resume {
@@ -911,11 +912,21 @@ a {
 /*проверить - не работает внутренняя красная тень, на макете сделана просто картинкой*/
 .map-big {
 	box-shadow: inset 0 7px 0 0 #ff5257;
+	margin-top: 7px;
 }
 
 .on-the-map {
-	width: 943px;
-	min-height: 449px;
+	margin: 0 auto;
+	width: 940px;
+	min-height: 446px;
+}
+
+.on-the-map p,
+.on-the-map a {
+	line-height: 0;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
 }
 
 /*--CATALOG--*/
@@ -1025,6 +1036,132 @@ a {
 	line-height: 18px;
 	color: #444444;
 	background-color: transparent;
+}
+
+.filter-option label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+
+.filter-input-checkbox + label::before {
+	position: absolute;
+	content: url("../img/checkbox-off.svg");
+	width: 23px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox + label:hover::before {
+	position: absolute;
+	content: url("../img/checkbox-off-hover.svg");
+	width: 23px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox + label:active::before {
+	position: absolute;
+	content: url("../img/checkbox-off-active.svg");
+	width: 23px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox:checked + label::before {
+	position: absolute;
+	content: url("../img/checkbox-on.svg");
+	width: 27px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox:checked + label:hover::before {
+	position: absolute;
+	content: url("../img/checkbox-on-hover.svg");
+	width: 27px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox:checked + label:active::before {
+	position: absolute;
+	content: url("../img/checkbox-on-active.svg");
+	width: 27px;
+	height: 23px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio + label::before {
+	position: absolute;
+	content: url("../img/radio-off.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio + label:hover::before {
+	position: absolute;
+	content: url("../img/radio-off-hover.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio + label:active::before {
+	position: absolute;
+	content: url("../img/radio-off-active.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio:checked + label::before {
+	position: absolute;
+	content: url("../img/radio-on.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio:checked + label:hover::before {
+	position: absolute;
+	content: url("../img/radio-on-hover.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-radio:checked + label:active::before {
+	position: absolute;
+	content: url("../img/radio-on-active.svg");
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: -1px;
+}
+
+.filter-input-checkbox + label:active {
+	opacity: 0.4;
+}
+
+.filter-input-radio + label:active {
+	opacity: 0.4;
 }
 
 .filter-producer-list label {
