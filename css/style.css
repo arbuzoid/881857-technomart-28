@@ -1047,6 +1047,13 @@ a {
 	margin-bottom: 2px;
 }
 
+.filter-input-checkbox:focus + label::before {
+	outline: rgb(59, 153, 252) auto 5px;
+}
+
+.filter-input-radio:focus + label::before {
+	outline: rgb(59, 153, 252) auto 5px;
+}
 
 .filter-input-checkbox + label::before {
 	position: absolute;
