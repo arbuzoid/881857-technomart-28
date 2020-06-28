@@ -250,10 +250,18 @@ body {
 }
 
 .item-actions {
+	display: none;
+}
+
+.product-item:hover .item-actions {
 	display: flex;
 	flex-direction: column;
 	flex-basis: 100%;
 	margin-top: 38px;
+}
+
+.product-item:hover .product-image {
+	display: none;
 }
 
 .item-actions a {
@@ -816,9 +824,7 @@ body {
 	position: relative;
 }
 
-.item-added .close-button,
-.write-us .close-button,
-.on-the-map .close-button {
+.close-button {
 	position: absolute;
 	right: 10px;
 	top: 18px;
@@ -827,7 +833,7 @@ body {
 	content: "";
 	cursor: pointer;
 	border: none;
-	background: url(../img/cross.svg) no-repeat;
+	background: url(../img/cross.svg) no-repeat 0 0;
 }
 
 .write-us .close-button {
